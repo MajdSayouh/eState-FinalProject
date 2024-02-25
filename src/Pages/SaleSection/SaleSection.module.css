@@ -1,0 +1,81 @@
+.cardRent{
+    height: 350px;
+    /* width: calc(100 / 3); */
+    border: 1px solid gray;
+    border-radius: 6px;
+    padding: 0 !important;
+    /* z-index: 5; */
+    /* margin: 0 !important; */
+    position: relative;
+}
+.RentImage{
+    height: 65%;
+    width: 100%;
+    /* background-size: cont; */
+    background-position: 100%;
+    border-radius: 6px; 
+    background-repeat: no-repeat;
+}
+
+.cards {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 2rem;
+    
+    }
+    
+    /* &amp;amp;nbsp; */
+    
+    .card {
+    border: 2px solid #e7e7e7;
+    border-radius: 4px;
+    /* padding: .5rem; */
+    
+    }
+
+    .cardOverlay{
+        position: absolute;
+        height: 65%;
+        width: 100%;
+        /* background-size: cont; */
+        border-radius: 6px; 
+    background-color: gray;
+    opacity: .3;
+    top: 0;
+    /* z-index: ; */
+    }
+
+    .cardOverlayText{
+        /* color: white !important; */
+        z-index: 10;
+    }
+    @media (max-width:992px) {
+        .cards{
+        display: grid;
+    grid-template-columns: repeat(2, 6fr);
+    grid-auto-rows: auto;
+    grid-gap: 1rem;
+    }
+ }    
+        
+ @media (max-width:768px) {
+             .cards{
+               display: grid;
+           grid-template-columns: repeat(1, 12fr);
+           grid-auto-rows: auto;
+           grid-gap: 1rem;
+           }
+           
+        }  
+
+
+.hrLine{
+    /* padding-top: -30px !important; */
+    margin-top: -15px !important;
+}        
+
+.btnCard{
+    width: 15%;
+}
